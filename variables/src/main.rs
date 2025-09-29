@@ -4,7 +4,7 @@ fn main () {
     let array = [10, 11, 12, 13, 14, 15];
 
     let mut index = String::new();
-    println!("Please enter the index you want to see between 0 and 4");
+    println!("Please enter the index you want to see between 0 and 6");
 
     io::stdin()
     .read_line(&mut index)
