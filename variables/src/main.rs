@@ -1,6 +1,7 @@
 fn main () {
-    let message = "I want to learn to make cli apps";
-    println!("{message}");
-    let message = message.len();
-    println!("\nSize of message is: {message}")
+    let array = [2;5];
+    
+    for i in 0..5 {
+        println!("The number {} component is: {}", i, array[i]);
+    }
 }
