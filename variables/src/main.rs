@@ -10,7 +10,7 @@ fn main () {
     .read_line(&mut index)
     .expect("Failed to read the line");
 
-    let index:usize = index.trim().parse().expect("Please enter a number");
+    let index:usize = index.trim().parse().expect("Please enter a number:");
 
     println!("\nThe number at {index} is {}", array[index]);
 }
