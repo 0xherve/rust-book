@@ -1,13 +1,23 @@
 fn main() {
-    let mut counter = 0;
+    let mut count = 0;
+    'counting: loop {
+        println!("\nWe are on loop {count}");
+        let mut number = 3;
 
-    let result = loop {
-        counter +=1;
+        loop {
+            if number == 1 {
+                println!("Cycle finished ---------------- ");
+                break;
+            }
+            if count == 2 {
+                println!("\nWe are done with all the loops.\n");
+                break 'counting;
+            }
 
-        if counter == 10 {
-            break counter + 1;
+            println!("Number {number}");
+            number -=1 ;
         }
-    };
-
-    println!("The counter stopped and the result is at the {result} try.");
+        count += 1;
+    } 
+    println!("----------------------------------------------------------");
 }
