@@ -1,12 +1,8 @@
 fn main () {
-    let mut number = 10;
+    let array = [4; 5];
     println!("");
 
-    while number !=0 {
-        println!("Number = {number}");
-        number -= 1;
+    for num in array {
+        println!("nnumber: {num}")
     }
-
-    println!("");
-    println!("The list is done");
 }
