@@ -1,9 +1,11 @@
 fn main() {
-    let s = String::from("not Him");
-    let len= calculate_len(&s);
-    println!("The length of'{s}' is {len}");
+    let mut s = String::from("not");
+
+    view(&mut s);
 }
 
-fn calculate_len(str: &String) -> usize {
-    str.len()
+fn view(str: &mut String) {
+    println!("The string is '{str}'");
+    str.push_str(" him");
+    println!("The new string is '{str}'");
 }
