@@ -2,7 +2,7 @@ use std::io;
 
 fn main () {
 
-    println!("This is the if statement learning file")
+    println!("This is the if statement learning file");
 
     loop {
     let mut number = String::new();
